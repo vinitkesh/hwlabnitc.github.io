@@ -28,6 +28,7 @@ write_address (both are not necessary here since we write to only 1 register but
 `5`. Output port: read_data, write to it when the read/write signal is high and 
 read its value when the read/write signal is low.   
 
+::: details View Code
 ```v
 module register(input clk, rst, rw, 
                 input [3:0] write_data, 
@@ -43,6 +44,10 @@ module register(input clk, rst, rw,
     end 
 endmodule
 ```  
+
+:::
+
+
 Since we have written our read logic in the else block, even if the rw 
 signal is any value other than 0 or 1 at the beginning we just read the 
 register displaying its contents, which is ‘x’ initially. This is to avoid 
@@ -59,6 +64,7 @@ A read and write operation cannot occur simultaneously but we can have
 either of the write ports. Initially, when we perform a write operation, we write into the register with write_data_1, the next time with 
 write_data_2, etc.  
 
+::: details View Code
 ```v
 module reg_wr(input clk, 
               input rst, 
@@ -88,6 +94,7 @@ module reg_wr(input clk,
     end 
 endmodule
 ```  
+:::
 To design a register using flip-flops, let’s consider the first example 
 wherein we had a 4-bit register with one read and write port. 
 We instantiate four D flip-flops and assign the incoming input as input to 
@@ -95,6 +102,8 @@ the flip-flops if the rw signal is high, else we assign the contents of the
 flip-flop to the output variable. Note that in case of the write operation, 
 the output variable reflects the previously read/stored value.
 
+
+::: details View Code
 ```v
 module dflfl(output reg op, input ip, input clk); 
     always @(posedge clk) begin 
@@ -121,6 +130,7 @@ module four_bit_reg(output reg [3:0] out, input [3:0] ip, input clk, input rw);
     end 
 endmodule 
 ```
+:::
 
 When we instantiate the D flip-flops, we check whether the rw signal is 
 high i.e. whether a write is occurring to pass the input to it. Since we 
@@ -148,6 +158,7 @@ operation occurring simultaneously won’t create a problem.
 Let’s look at the code for a register file with 8 registers capable of storing 
 8-bit data each. It has 2 read ports and 1 write port. Two reads are permitted simultaneously, however only read or write is allowed at a 
 time.   
+::: details View Code
 ```v
 module reg_file(input clk, rst, 
                 input [1:0]r1r2w, 
@@ -184,6 +195,8 @@ module reg_file(input clk, rst,
     end 
 endmodule
 ```
+:::
+
 We declare a r1r2w signal because we are permitted to perform two 
 reads but a read and write cannot occur simultaneously. Besides the 
 ports, we declare an array of eight eight-bit registers in Verilog in this 
@@ -203,6 +216,7 @@ have a read and write operation at once but we can perform both write
 operations simultaneously. In case two writes try to access the same register, 
 give priority to write_data_1.   
  
+::: details View Code
 ```v
 module reg_file(input clk, rst, 
                 input [1:0] rw1w2, 
@@ -244,6 +258,8 @@ module reg_file(input clk, rst,
     end 
 endmodule 
 ```  
+:::
+
 **Q:** Can you take the previous example and modify it such that the register file 
 now has 2 read ports and 2 write ports and any pair of operations can occur 
 simultaneously? Let the read operation be of higher priority when a read and 
@@ -309,6 +325,7 @@ outputs at each ff)**
 
 Let’s look at the design of a 4-bit shift register (SISO) in Verilog:
 
+::: details View Code
 ```v
 module shift_reg(input clk, en, in, output reg out); 
     reg [3:0] sreg; 
@@ -325,12 +342,14 @@ module shift_reg(input clk, en, in, output reg out);
     end 
 endmodule
 ```  
+:::
 
 When the EN signal is active, the shift register operates according to SISO logic; 
 however, when the EN signal is inactive, no shifting or alteration occurs.   
 If we were to implement a 4-bit shift register (SISO) with D flip-flops 
 (hierarchical modelling), it would look like this:  
 
+::: details View Code
 ```v
 module dflfl(output reg op, input ip, input clk); 
     always @(posedge clk) begin 
@@ -350,6 +369,7 @@ module siso(output reg [3:0] out,
    
  endmodule
 ```
+:::
 
 This is an example of a shift right SISO shift register wherein the input gets 
 serially shifted to the right at every positive edge triggering. The combinational 
@@ -375,6 +395,7 @@ instantiation, we can utilize instantiation parameters. We can pass the required
 value of the parameter at the time of instantiation and we can also specify a 
 default value.  
 
+::: details View Code
 ```v
 module register #(parameter WIDTH=4) (
     input clk, rst, rw,
@@ -391,6 +412,7 @@ module register #(parameter WIDTH=4) (
     end 
 endmodule
 ```
+:::
 
 The syntax for parametrizing a module is:   
 *module module_name #(parameter PARAMETER_NAME =default_value) 

@@ -16,14 +16,15 @@ features:
     title: Finite State Machines
     details: Design a Verilog-based FSM that enhances your circuits with efficient sequential control and decision-making capabilities.
     link: "#finite-state-machines"
-  - icon : 🖥️
-    title: MIPS Single Cycle Processor
-    details: Build an exciting MIPS single cycle processor which will allow you to run MIPS hardware commands.
-    link: "#single-cycle-mips-processor"
   - icon: 💾
     title : Registers
     details : Learn about the registers in MIPS ISA.
     link : "#registers"
+  - icon : 🖥️
+    title: MIPS Single Cycle Processor
+    details: Build an exciting MIPS single cycle processor which will allow you to run MIPS hardware commands.
+    link: "#single-cycle-mips-processor"
+
 
 ---
 
@@ -47,11 +48,11 @@ Video Explanation of Theory:
 1. [Theory Vid Part 1 (INTRO TO VERILOG-LOGIC GATES-ADDERS-SUBTRACTORS)](https://youtu.be/SnNwp8LP_2k)  
 
 
-<iframe width="400" height="315" src="https://www.youtube.com/embed/SnNwp8LP_2k" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/SnNwp8LP_2k" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 2. [Theory Vid Part 2 (PARITY-TILL END)](https://youtu.be/VU-qFRw2F_s)
 
-<iframe width="400" height="315" src="https://www.youtube.com/embed/VU-qFRw2F_s" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/VU-qFRw2F_s" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 **Implementation** :  
 
@@ -77,17 +78,35 @@ Documentation: [Link](./SingleCycle.md)
 Video Explanation of Concept:
 
 1.  [Main Concept](https://youtu.be/9nHTW8BrM_w)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/9nHTW8BrM_w" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 2.  [Syntax (Optional)](https://youtu.be/EqF6Gd7BQzk)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/EqF6Gd7BQzk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 **Implementation** :
 
 Video Explanation of Code (From Documentation):  
 [Examples of FSM along with Code explanation](https://youtu.be/zHOonX-TYoI)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/zHOonX-TYoI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Code Bank:
 [Link to Sample Codes](https://github.com/hwlab-csed/Finite-State-Machines)
 
-Assignment 2: [Download Here](https://docs.google.com/document/d/1avLaRaK21iEwoFccVg0-Q_Gl7DnGbY5e/edit?usp=sharing&ouid=113214929865087000394&rtpof=true&sd=true)
+## Assignment 2: [Download Here](https://docs.google.com/document/d/1avLaRaK21iEwoFccVg0-Q_Gl7DnGbY5e/edit?usp=sharing&ouid=113214929865087000394&rtpof=true&sd=true)
+
+## **Registers**
+
+**Theory** :
+
+Documentation: [Link to Main Documentation](./registers.md)  
+
+Video Explanation of Concept:
+
+ 1. [Control Unit Theory]( https://youtu.be/_QdWPSIrtVo)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/_QdWPSIrtVo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+ 2. [Datapath Theory](https://youtu.be/n8S_XsjyF9U)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/n8S_XsjyF9U" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## **Single Cycle MIPS Processor**
 
@@ -97,28 +116,27 @@ Documentation: [Link to Main Documentation](/)
 Video Explanation of Concept:
 
 1.  [Control Unit Theory](https://youtu.be/_QdWPSIrtVo)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/_QdWPSIrtVo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
+
 2.  [Datapath Theory](https://youtu.be/n8S_XsjyF9U)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/n8S_XsjyF9U" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 **Implementation** :  
 Video Explanation of Code (From Documentation) :
 
 1.  [Code Modules 1 to 5 explained](https://youtu.be/akrKa3O-7T8)
-2.  [Code Modules 6 to 10 explained](https://youtu.be/Q51G2JWI5t0)
-3.  [All Testbenches explained](https://youtu.be/_pPCv_fkO1w)  
-    Code Bank:
+<iframe width="560" height="315" src="https://www.youtube.com/embed/akrKa3O-7T8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
 
+2.  [Code Modules 6 to 10 explained](https://youtu.be/Q51G2JWI5t0)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Q51G2JWI5t0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+3.  [All Testbenches explained](https://youtu.be/_pPCv_fkO1w)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/_pPCv_fkO1w" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>    
+    
+**Code Bank:**   
 [Link to Sample Codes](https://github.com/hwlab-csed/Single-Cycle-Processor)
 
+## Assignment 4:  [Download Here](https://drive.google.com/file/d/1SMjzJmn0EjlE59kXobJl59c5MZmNftOH/view?usp=sharing)
 
-Assignment 3:  [Download Here](https://drive.google.com/file/d/1SMjzJmn0EjlE59kXobJl59c5MZmNftOH/view?usp=sharing)
 
-## **Registers**
-
-**Theory** :
-
-Documentation: [Link to Main Documentation](./registers.md)
-Video Explanation of Concept:
-
- 1. [Control Unit Theory]( https://youtu.be/_QdWPSIrtVo)
- 2. [Datapath Theory](https://youtu.be/n8S_XsjyF9U)
 ---

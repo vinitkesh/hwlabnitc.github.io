@@ -45,7 +45,7 @@ export default defineConfig({
           { text: 'Main Documentaion', link: '/Verilog/Intro' },
           { text: 'FSM', link : '/Verilog/fsm/' },
           { text: 'Single Cycle CPU', link : '/Verilog/SingleCycle/' },
-          {text: 'Registers', link: '/Verilog/registers'},          
+          { text: 'Registers', link: '/Verilog/registers'},          
           ]
       }
     ],

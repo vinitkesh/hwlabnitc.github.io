@@ -39,6 +39,7 @@ This course covers the following topics-
 
 * `Introduction To Verilog` - Learn the Basics of Verilog HDL.
 * `Finite State Machines` - Design a Verilog-based Finite State Machine (FSM) that enhances your circuits with efficient sequential control and decision-making capabilities.
+* `Registers` - Design a register for storing data and learn how actual registers work in memory.
 * `MIPS Single Cycle Processor` - Build an exciting MIPS single cycle processor which will allow you to run MIPS hardware commands.
 
 
